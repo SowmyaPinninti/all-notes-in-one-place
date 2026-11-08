@@ -50,7 +50,7 @@ function Index() {
   return (
     <div className="relative min-h-screen text-foreground">
       <div
-        className="fixed inset-0 -z-10 bg-cover bg-center"
+        className="fixed inset-0 -z-10 bg-cover bg-[position:80%_20%]"
         style={{ backgroundImage: `url(${bg.url})` }}
       />
       <div className="fixed inset-0 -z-10 bg-gradient-to-b from-overlay/60 via-overlay/75 to-overlay/90" />
