@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import bg from "@/assets/ai_image.jpg.asset.json";
+const bg = { url: "/ai-background.jpg" };
 
 export const Route = createFileRoute("/")({
   head: () => ({
