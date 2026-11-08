@@ -74,8 +74,12 @@ function Index() {
         </Panel>
 
         <Panel>
-          <h2 className="mb-8 font-display text-3xl md:text-4xl">Introduction: How We Reached AI</h2>
-          <div className="space-y-10">
+          <details className="group">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-3xl md:text-4xl [&::-webkit-details-marker]:hidden">
+            Introduction: How We Reached AI
+            <span className="text-glow transition-transform duration-300 group-open:rotate-180">▾</span>
+          </summary>
+          <div className="mt-8 space-y-10">
             <Era year="1830s" title="The Analytical Engine">
               <p>
                 In the 1830s, Charles Babbage designed the Analytical Engine because he wanted a
@@ -147,6 +151,7 @@ function Index() {
               </p>
             </Era>
           </div>
+          </details>
         </Panel>
 
         <Panel>
