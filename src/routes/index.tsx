@@ -151,11 +151,8 @@ function Index() {
               </p>
             </Era>
           </div>
-          </details>
-        </Panel>
 
-        <Panel>
-          <h2 className="mb-8 font-display text-3xl md:text-4xl">Historical Milestones</h2>
+          <h3 className="mb-8 mt-14 font-display text-3xl">Historical Milestones</h3>
           <ol className="grid gap-4 sm:grid-cols-2">
             {milestones.map(([year, title, text], i) => (
               <li key={title} className="rounded-xl border border-glass-border bg-glass-strong p-5">
@@ -172,6 +169,152 @@ function Index() {
             <strong className="text-glow">Point to note:</strong> AI was not widely used by everyday
             people until 2022.
           </p>
+          </details>
+        </Panel>
+
+        <Panel>
+          <details className="group">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-3xl md:text-4xl [&::-webkit-details-marker]:hidden">
+              The GPT Journey & Generative AI
+              <span className="text-glow transition-transform duration-300 group-open:rotate-180">▾</span>
+            </summary>
+            <div className="mt-8 space-y-10">
+              <p className="leading-relaxed text-foreground/90">
+                GPT did not happen overnight. It grew out of years of research in AI, machine
+                learning, neural networks and natural language processing.
+              </p>
+              <Era year="December 2015" title="OpenAI Is Founded">
+                <p>
+                  OpenAI was founded as an artificial intelligence research organisation. Its broad
+                  ambition was to develop artificial general intelligence (AGI).
+                </p>
+              </Era>
+              <Era year="2017" title="The Transformer">
+                <p>
+                  One of the most important moments in GPT's history happened in 2017. The
+                  Transformer architecture introduced a mechanism called <em>attention</em>, which
+                  helps a model understand which words in a sentence matter most in relation to the
+                  other words.
+                </p>
+                <p>
+                  Transformers made it possible to process language more effectively and to train
+                  much larger language models.
+                </p>
+              </Era>
+              <Era year="2018" title="GPT-1">
+                <p>
+                  GPT-1 was released. GPT stands for <strong>Generative Pre-trained Transformer</strong>.
+                </p>
+                <p>
+                  GPT-1 was trained on thousands of books from the BooksCorpus dataset and learned to
+                  predict which word should come next. It had approximately 117 million parameters.
+                </p>
+              </Era>
+              <Era year="2019" title="GPT-2">
+                <p>
+                  Compared with GPT-1, GPT-2 learned from far more text and could generate longer,
+                  more coherent paragraphs, articles and stories. It had 1.5 billion parameters.
+                </p>
+              </Era>
+              <Era year="2020" title="GPT-3">
+                <p>
+                  GPT-3 was a major milestone because it could perform many more language tasks:
+                  answering questions, writing articles and stories, translating languages,
+                  generating computer code and summarising information. GPT-3 was a language model
+                  accessed through an API.
+                </p>
+              </Era>
+              <Era year="30 November 2022" title="ChatGPT">
+                <p>
+                  ChatGPT was introduced. It is an application through which people interact with the
+                  underlying AI model, which at launch was GPT-3.5.
+                </p>
+                <p>
+                  OpenAI also used a training technique called <strong>RLHF</strong> (Reinforcement
+                  Learning from Human Feedback).
+                </p>
+                <p className="font-display text-xl italic text-glow">How did it work?</p>
+                <ol className="list-decimal space-y-1 pl-6">
+                  <li>Human trainers prepared example conversations.</li>
+                  <li>The AI learned how to respond to instructions.</li>
+                  <li>Humans compared different AI responses.</li>
+                  <li>Better responses were ranked more highly.</li>
+                  <li>The model was further trained using this feedback.</li>
+                </ol>
+                <p>This helped ChatGPT become more conversational and useful.</p>
+              </Era>
+              <Era year="2023 onwards" title="More Powerful Models">
+                <p>
+                  From 2023, more powerful models were released. They could also understand image
+                  inputs and handle more advanced reasoning.
+                </p>
+              </Era>
+              <Era year="2026" title="Today">
+                <p>As of 2026, we are using GPT-6.</p>
+              </Era>
+            </div>
+
+            <h3 className="mb-6 mt-14 font-display text-3xl">What Is Generative AI?</h3>
+            <div className="space-y-4 leading-relaxed text-foreground/85">
+              <p>
+                Generative AI (GenAI) is a category of AI that can create new content. GPT, which
+                generates text, and DALL-E, which generates images, are both examples of GenAI.
+              </p>
+              <p>
+                GenAI is no longer limited to generating text. Different organisations have developed
+                models for different types of content.
+              </p>
+            </div>
+            <div className="mt-6 overflow-x-auto rounded-xl border border-glass-border bg-glass-strong">
+              <table className="w-full text-left text-sm">
+                <thead className="font-mono text-xs uppercase tracking-widest text-glow">
+                  <tr>
+                    <th className="p-4">Model</th>
+                    <th className="p-4">Organisation</th>
+                    <th className="p-4">Purpose</th>
+                  </tr>
+                </thead>
+                <tbody className="text-foreground/85">
+                  {[
+                    ["GPT", "OpenAI", "Generates text"],
+                    ["DALL-E", "OpenAI", "Generates images"],
+                    ["Midjourney", "Midjourney", "Generates images"],
+                    ["Stable Diffusion", "Stability AI and collaborators", "Generates images"],
+                  ].map(([m, o, p]) => (
+                    <tr key={m} className="border-t border-glass-border">
+                      <td className="p-4 font-display text-lg text-foreground">{m}</td>
+                      <td className="p-4">{o}</td>
+                      <td className="p-4">{p}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <h3 className="mb-2 mt-14 font-display text-3xl">How AI, GenAI and GPT Relate</h3>
+            <p className="mb-6 text-foreground/75">This is the most important concept to remember.</p>
+            <div className="rounded-xl border border-glow/40 bg-glow/10 p-5">
+              <p className="font-display text-xl text-glow">Artificial Intelligence (AI)</p>
+              <p className="mt-1 text-sm text-foreground/80">The broad field of making machines perform intelligent tasks.</p>
+              <div className="mt-5 rounded-xl border border-glass-border bg-glass-strong p-5">
+                <p className="font-display text-xl text-glow">Generative AI (GenAI)</p>
+                <p className="mt-1 text-sm text-foreground/80">A branch of AI that creates new content.</p>
+                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  {[
+                    ["Text generation", "GPT"],
+                    ["Image generation", "DALL-E"],
+                    ["Video generation", "Sora"],
+                    ["Audio generation", "Audio models"],
+                  ].map(([k, v]) => (
+                    <div key={k} className="rounded-lg border border-glass-border bg-glass p-4">
+                      <p className="font-mono text-xs uppercase tracking-widest text-foreground/60">{k}</p>
+                      <p className="mt-1 font-display text-lg">{v}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </details>
         </Panel>
       </main>
     </div>
