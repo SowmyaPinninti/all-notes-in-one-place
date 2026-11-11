@@ -382,7 +382,7 @@ function NewAiCompanies() {
           </p>
           <p>
             <strong className="text-glow">Concern: data privacy.</strong> The data sent through the
-            API goes to the AI model company, such as OpenAI or Anthropic, and is stored with them.
+            API goes to the AI model company, such as OpenAI or Anthropic, and may be stored with them under their data policies.
           </p>
         </Option>
         <Option n="2" title="Self-host an open model">
