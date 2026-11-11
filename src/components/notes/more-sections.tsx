@@ -30,7 +30,7 @@ const globalLabs: [string, string, string, string, string][] = [
 
 function LlmBuilders() {
   return (
-    <Dropdown title="Who Builds the LLMs? Global & Indian Models">
+    <Dropdown title="The Companies Building Today's LLMs">
       <p>
         The following companies develop their own LLMs, rather than buying access to another
         company's AI model and building applications on top of it.
