@@ -30,7 +30,7 @@ const globalLabs: [string, string, string, string, string][] = [
 
 function LlmBuilders() {
   return (
-    <Dropdown kicker="Part 3" title="Who Builds the LLMs? Global & Indian Models">
+    <Dropdown title="Who Builds the LLMs? Global & Indian Models">
       <p>
         The following companies develop their own LLMs, rather than buying access to another
         company's AI model and building applications on top of it.
@@ -240,7 +240,7 @@ const infraSummary: [string, string][] = [
 
 function ValueStack() {
   return (
-    <Dropdown kicker="Part 4" title="The GenAI Value Stack">
+    <Dropdown title="The GenAI Value Stack">
       <p className="text-foreground/75">Learnt from HelloSource resources.</p>
 
       <div className="space-y-2">
@@ -359,7 +359,7 @@ function Option({ n, title, children }: { n: string; title: string; children: Re
 
 function NewAiCompanies() {
   return (
-    <Dropdown kicker="Part 5" title="How New AI Companies Evolve: APIs vs Self-Hosting">
+    <Dropdown title="How New AI Companies Evolve: APIs vs Self-Hosting">
       <Question>How will new AI companies evolve, and what could a PM do?</Question>
       <p>
         An AI startup doesn't need to build everything from scratch. It can rent infrastructure

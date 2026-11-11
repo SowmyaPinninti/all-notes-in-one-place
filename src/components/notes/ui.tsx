@@ -90,7 +90,7 @@ export function DataTable({
   return (
     <div className="overflow-x-auto rounded-xl border border-glass-border bg-glass-strong">
       {caption && <p className="border-b border-glass-border px-4 py-3 text-sm text-foreground/70">{caption}</p>}
-      <table className="w-full min-w-[520px] text-left text-sm">
+      <table className={`w-full text-left text-sm ${head.length > 2 ? "min-w-[560px]" : ""}`}>
         <thead className="font-mono text-xs uppercase tracking-widest text-glow">
           <tr>
             {head.map((h) => (

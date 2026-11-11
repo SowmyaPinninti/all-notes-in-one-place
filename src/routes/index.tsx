@@ -7,7 +7,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "AI & the PM Role — My Notes" },
-      { name: "description", content: "Personal notes on the history of AI and its impact on the product manager role." },
+      { name: "description", content: "Personal notes on AI history, LLM builders, the GenAI value stack and key takeaways for product managers." },
       { property: "og:title", content: "AI & the PM Role — My Notes" },
       { property: "og:description", content: "From Babbage's Analytical Engine to ChatGPT: a personal journey through AI history." },
       { property: "og:type", content: "article" },
