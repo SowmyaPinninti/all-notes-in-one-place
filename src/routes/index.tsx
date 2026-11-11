@@ -1,11 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Era, Panel } from "@/components/notes/ui";
+import { MoreSections } from "@/components/notes/more-sections";
 const bg = { url: "/ai-background.jpg" };
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "AI & the PM Role — My Notes" },
-      { name: "description", content: "Personal notes on the history of AI and its impact on the product manager role." },
+      { name: "description", content: "Personal notes on AI history, LLM builders, the GenAI value stack and key takeaways for product managers." },
       { property: "og:title", content: "AI & the PM Role — My Notes" },
       { property: "og:description", content: "From Babbage's Analytical Engine to ChatGPT: a personal journey through AI history." },
       { property: "og:type", content: "article" },
@@ -27,24 +29,6 @@ const milestones = [
   ["2022", "ChatGPT", "OpenAI releases ChatGPT, bringing conversational generative AI to a huge mainstream audience."],
   ["2023+", "Generative AI Expansion", "Rapid growth in AI assistants, image generation, coding tools, AI agents and multimodal models."],
 ];
-
-function Panel({ children }: { children: React.ReactNode }) {
-  return (
-    <section className="rounded-2xl border border-glass-border bg-glass p-6 shadow-2xl backdrop-blur-xl md:p-10">
-      {children}
-    </section>
-  );
-}
-
-function Era({ year, title, children }: { year: string; title: string; children: React.ReactNode }) {
-  return (
-    <div className="border-l-2 border-glow/60 pl-5">
-      <p className="font-mono text-sm tracking-widest text-glow">{year}</p>
-      <h3 className="mt-1 font-display text-2xl text-foreground">{title}</h3>
-      <div className="mt-3 space-y-3 leading-relaxed text-foreground/85">{children}</div>
-    </div>
-  );
-}
 
 function Index() {
   return (
@@ -316,6 +300,8 @@ function Index() {
             </div>
           </details>
         </Panel>
+
+        <MoreSections />
       </main>
     </div>
   );
