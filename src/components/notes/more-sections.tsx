@@ -241,7 +241,7 @@ const infraSummary: [string, string][] = [
 function ValueStack() {
   return (
     <Dropdown title="The GenAI Value Stack">
-      <p className="text-foreground/75">Learnt from HelloSource resources.</p>
+      <p className="text-foreground/75">Learnt from HelloPM resources.</p>
 
       <div className="space-y-2">
         {stack.map(([name, desc], i) => (
