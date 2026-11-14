@@ -41,7 +41,7 @@ function Index() {
 
       <Link
         to="/case-studies"
-        className="fixed right-4 top-4 z-20 rounded-full border border-glass-border bg-glass-strong px-5 py-2 text-sm font-semibold text-glow shadow-lg backdrop-blur-md transition hover:scale-105"
+        className="fixed left-4 top-4 z-20 rounded-full border border-glass-border bg-glass-strong px-5 py-2 text-sm font-semibold text-glow shadow-lg backdrop-blur-md transition hover:scale-105"
       >
         AI Case Studies
       </Link>
