@@ -10,6 +10,7 @@ import {
   Question,
   SubHeading,
 } from "./ui";
+import { AdaptingModels } from "./adapting-models";
 
 const split = (s: string) => s.split("; ");
 
@@ -629,6 +630,7 @@ export function MoreSections() {
       <LlmBuilders />
       <ValueStack />
       <NewAiCompanies />
+      <AdaptingModels />
       <PmTakeaway />
     </>
   );
