@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Era, Panel } from "@/components/notes/ui";
 import { MoreSections } from "@/components/notes/more-sections";
 const bg = { url: "/ai-background.jpg" };
@@ -38,6 +38,13 @@ function Index() {
         style={{ backgroundImage: `url(${bg.url})` }}
       />
       <div className="fixed inset-0 -z-10 bg-gradient-to-b from-overlay/60 via-overlay/75 to-overlay/90" />
+
+      <Link
+        to="/case-studies"
+        className="fixed right-4 top-4 z-20 rounded-full border border-glass-border bg-glass-strong px-5 py-2 text-sm font-semibold text-glow shadow-lg backdrop-blur-md transition hover:scale-105"
+      >
+        AI Case Studies
+      </Link>
 
       <main className="mx-auto max-w-3xl space-y-10 px-5 py-16 md:py-24">
         <header className="text-center">
